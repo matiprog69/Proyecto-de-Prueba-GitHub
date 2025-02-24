@@ -1,0 +1,36 @@
+def main():
+    print("Bienvenido al programa de cálculos y comparaciones.\n")
+
+    # Solicitar al usuario que ingrese dos números
+    n1 = int(input("Ingrese el primer número: "))
+    n2 = int(input("Ingrese el segundo número: "))
+
+    # Uso de operadores aritméticos
+    suma = n1 + n2  # Suma de los dos números
+    producto = n1 * n2  # Producto de los dos números
+
+    # Mostrar los resultados de las operaciones aritméticas
+    print(f"\nLa suma de {n1} y {n2} es: {suma}")
+    print(f"El producto de {n1} y {n2} es: {producto}")
+
+    # Uso de operadores relacionales para comparar los números
+    if n1 > n2:
+        print(f"\nEl número {n1} es mayor que {n2}.")
+    elif n1 < n2:
+        print(f"\nEl número {n1} es menor que {n2}.")
+    else:
+        print(f"\nAmbos números son iguales.")
+
+    # Uso de operadores lógicos para evaluar condiciones
+    if suma > 10 and producto > 20:
+        print("\nLa suma es mayor que 10 **y** el producto es mayor que 20.")
+    elif suma > 10 or producto > 20:
+        print("\nLa suma es mayor que 10 **o** el producto es mayor que 20.")
+    else:
+        print("\nNi la suma supera 10 ni el producto supera 20.")
+        print("no puedo resolver")
+
+
+# Llamar a la función principal
+if __name__ == "__main__":
+    main()
